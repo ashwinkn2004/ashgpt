@@ -138,3 +138,12 @@ body {
     opacity: 0.5;
     /* Optional: Make it slightly subtle if 100% is too bright, but user asked for "like the plus icon color" */
 }
+
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+        /* Hide sidebar on mobile/tablet for simple responsiveness */
+    }
+}
+
+/* If manual toggle is implemented later, we can change this from display:none to position:fixed */

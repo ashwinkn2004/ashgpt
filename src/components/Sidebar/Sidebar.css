@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: white;
+    /* Move global color to body */
+}
+
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #161b22;
+    --icon-color: #fff;
+    padding: 25px 15px;
+}
+
+.icon {
+    color: var(--icon-color);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.sidebar .drawer h1 {
+    font-size: 1.5rem;
+    color: #cbd5e1;
+    /* Using the lighter gray or white as preferred */
+    font-weight: 600;
+}
+
+.menu-icon {
+    display: block;
+    /* margin-left: 10px;  Removed to center the icon when H1 is hidden */
+}
+
+.sidebar .drawer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.sidebar .new-chat {
+    margin-top: 30px;
+    align-items: center;
+    display: inline-flex;
+    gap: 15px;
+    padding: 10px 15px;
+    background-color: #1e293b;
+    border-radius: 10px;
+    color: #475569;
+    /* Slightly reduced text color */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.sidebar .new-chat:hover {
+    background-color: #334155;
+}
+
+.sidebar .new-chat p {
+    color: #94a3b8;
+    /* Reduce text color intensity */
+    font-weight: 500;
+}
+
+.sidebar .new-chat .plus-icon {
+    color: #3B82F6 !important;
+}
+
+.sidebar .recent {
+    margin-top: 20px;
+}
+
+.sidebar .recent-title {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: #94a3b8;
+    /* Reduced color */
+    font-size: 0.9rem;
+}
+
+.sidebar .recent-entry p {
+    font-size: 0.85rem;
+    /* Reduced text size */
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Reduced gap from 15px */
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #cbd5e1;
+    transition: background-color 0.2s;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #1e293b;
+}
+
+.sidebar .bottom-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Reduced gap from 15px */
+    padding: 8px 10px;
+    /* Reduced vertical padding */
+    border-radius: 20px;
+    cursor: pointer;
+    color: #cbd5e1;
+    transition: background-color 0.2s;
+    margin-bottom: 2px;
+    /* Reduced margin from 5px */
+}
+
+.sidebar .bottom-item:hover {
+    background-color: #1e293b;
+}
+
+.sidebar .divider hr {
+    border: none;
+    height: 1px;
+    /* Thin line */
+    background-color: #3B82F6;
+    /* Plus icon color */
+    margin: 10px 0;
+    /* Adjust spacing if needed */
+    opacity: 0.5;
+    /* Optional: Make it slightly subtle if 100% is too bright, but user asked for "like the plus icon color" */
+}

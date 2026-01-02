@@ -1,0 +1,142 @@
+.main {
+    flex: 1;
+    min-height: 100vh;
+    background-color: #0f131a;
+    color: #e3e3e3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 10vh;
+    /* Reduced from 15vh */
+    margin-bottom: 20px;
+    /* Reduced margin */
+}
+
+.ashgpt-intro {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Reduced margin */
+}
+
+.ashgpt-intro h1 {
+    font-size: 2.0rem;
+    /* Reduced from 2.8rem */
+    font-weight: 550;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.ashgpt-intro p {
+    font-size: 1rem;
+    /* Reduced from 1.1rem */
+    color: #94a3b8;
+}
+
+.text-input {
+    width: 100%;
+    max-width: 800px;
+    background-color: #1e293b;
+    border-radius: 15px;
+    padding: 8px 12px;
+    /* Reduced padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    /* Reduced margin */
+    border: 1px solid #334155;
+    height: 50px;
+}
+
+.text-input:focus-within {
+    border-color: #3b82f6;
+}
+
+.text-input input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    /* Reduced padding */
+    font-size: 1rem;
+    /* Reduced from 1.1rem */
+    color: #e2e8f0;
+    width: 100%;
+}
+
+.text-input input::placeholder {
+    color: #64748b;
+}
+
+.text-input .send-btn {
+    padding: 8px 10px;
+    /* Reduced padding */
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.text-input button:hover {
+    background-color: #2563eb;
+}
+
+.main .sample-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* Reduced gap */
+    width: 100%;
+    max-width: 900px;
+}
+
+.main .sample-input .input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1e293b;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 8px 15px;
+    /* Reduced padding */
+    margin-bottom: 0;
+    /* Removing margin-bottom since we use gap */
+    border: 1px solid #334155;
+    transition: all 0.2s;
+}
+
+.main .sample-input .input:hover {
+    background-color: #334155;
+    border-color: #475569;
+    transform: translateY(-2px);
+}
+
+.main .sample-input .input p {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    /* Reduced from 0.95rem */
+    margin: 0;
+}
+
+/* Icon specific colors */
+.main .sample-input .input .code-icon {
+    color: #3b82f6;
+}
+
+.main .sample-input .input .summary-icon {
+    color: #f97316;
+}
+
+.main .sample-input .input .plane-icon {
+    color: #ec4899;
+}
+
+.main .sample-input .input .lightbulb-icon {
+    color: #22c55e;
+}

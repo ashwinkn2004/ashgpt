@@ -225,3 +225,43 @@
     flex: 1;
     width: 100%;
 }
+
+@media (max-width: 600px) {
+    .main {
+        padding: 10px;
+    }
+
+    .text-input {
+        margin-bottom: 20px;
+    }
+
+    .main .sample-input {
+        grid-template-columns: 1fr;
+        /* Stack cards */
+    }
+
+    .chat-input {
+        bottom: 10px;
+        padding-right: 20px;
+        left: 0px;
+        /* Ensure specific width logic if side bar is overlay */
+    }
+
+    .ashgpt-intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-input input {
+        font-size: 14px;
+    }
+
+    .result-data p {
+        font-size: 15px;
+    }
+
+    .result {
+        margin-bottom: 80px;
+        /* ensure result doesn't go behind input mobile */
+        max-height: 60vh;
+    }
+}
